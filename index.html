@@ -9,12 +9,20 @@
 
 <body>
     <form name="srcCalc" id="srcCalc">
-        <select name="starCnt" id="starCnt">
+        <select name="starCnt" id="starCnt" onchange="iptxtgen(this.value);">
             <option value="5">5 Star</option>
             <option value="10">10 Star</option>
         </select>
     </form>
     <script type="text/javascript">
+    function iptxtgen(val) {
+        console.log(val);
+        var tp = ""; 
+        for (var i=0; i<val ; i++) {
+            tp += "<input type=\"number\" value=\""+i+"\" />";
+        }
+        console.log(tp);
+    }
     </script>
 </body>
 
