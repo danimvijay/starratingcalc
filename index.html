@@ -12,6 +12,9 @@
         <select name="starCnt" id="starCnt" onchange="iptxtgen(this.value);">
             <option value="5">5 Star</option>
             <option value="10">10 Star</option>
+            <span id="starIps">
+                
+            </span>
         </select>
     </form>
     <script type="text/javascript">
@@ -21,7 +24,8 @@
         for (var i=0; i<val ; i++) {
             tp += "<input type=\"number\" value=\""+i+"\" />";
         }
-        console.log(tp);
+        $("#starIps").html(tp);
+        //console.log(tp);
     }
     </script>
 </body>
