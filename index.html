@@ -12,11 +12,11 @@
         <select name="starCnt" id="starCnt" onchange="iptxtgen(this.value);">
             <option value="5">5 Star</option>
             <option value="10">10 Star</option>
-            <span id="starIps">
-                
-            </span>
-            <input type="submit" name="submit" value="calculate" />
         </select>
+        <span id="starIps">
+                
+        </span>
+        <input type="submit" name="submit" value="calculate" onclick="calculate();" />
     </form>
     <script type="text/javascript">
     function iptxtgen(val) {
@@ -27,6 +27,9 @@
         }
         $("#starIps").html(tp);
         //console.log(tp);
+    }
+    function calculate() {
+        //code
     }
     </script>
 </body>
