@@ -1,5 +1,5 @@
 # Star Rating Calculator
-Find 5/10 star rating averages
+Finding 5/10 star rating averages is now easier than ever
 
 ## How to use
 1. Select star rating type - 5 or 10
